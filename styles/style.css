@@ -1,0 +1,100 @@
+:root {
+    --main-color: #3a68b7;
+    font-size: 62.5%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.form {
+    width: 50rem;
+    padding: 3rem;
+    font-size: 1.6rem;
+    background-color: white;
+    box-shadow: -1rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.form-fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.form-fieldset__legend {
+    font-size: 3rem;
+    margin: 0 0 1rem;
+    color: var(--main-color);
+    font-weight: 300;
+}
+
+.form__label, .form__input_userData {
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.form__label {
+    margin: 2rem 0 1rem;
+    text-transform: uppercase;
+}
+
+.form__input_userData {
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+    padding: 1rem;
+    transition: padding 0.2s ease 0s;
+}
+
+.form__input_userData:focus  {
+    outline: 1px solid var(--main-color);
+    outline-offset: -1px;
+    padding: 1rem 1.5rem;
+}
+
+.form__action {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.form__action__aside, .form__action__link {
+    flex-grow: 1;
+    text-align: right;
+    flex-wrap: wrap;
+}
+
+.form__action__link {
+    color: var(--main-color);
+}

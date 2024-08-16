@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="" method="post" class="form" autocomplete="off">
+        <fieldset class="form-fieldset">
+            <legend class="form-fieldset__legend">Entrar</legend>
+
+            <label for="username" class="form__label">Usuário</label>
+            <input type="text" name="username" id="username" class="form__input_userData" required>
+
+            <label for="password" class="form__label">Senha</label>
+            <input type="password" name="password" id="password" class="form__input_userData" required>
+
+            <div class="form__action">
+                <input type="submit" name="login" value="Entrar" class="btn btn-primary">
+                <a href="index.html" class="btn btn-secondary">Cadastre-se</a>
+                <a href="#" class="form__action__link">Esqueci minha senha</a>
+            </div>
+            
+        </fieldset>
+    </form>
+</body>
+
+</html>
